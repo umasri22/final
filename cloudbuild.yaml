@@ -26,7 +26,7 @@ steps:
   args:
   - 'build'
   - '-t'
-  - 'us-central1-docker.pkg.dev/project2-363320/my-repository/hello-cloudbuild:$SHORT_SHA'
+  - 'us-central1-docker.pkg.dev/project2-363320/my-repository/hello-cloudbuild3:$SHORT_SHA'
   - '.'
 
 # This step pushes the image to Artifact Registry-
@@ -36,4 +36,4 @@ steps:
   id: Push
   args:
   - 'push'
-  - 'us-central1-docker.pkg.dev/project2-363320/my-repository/hello-cloudbuild:$SHORT_SHA'
+  - 'us-central1-docker.pkg.dev/project2-363320/my-repository/hello-cloudbuild3:$SHORT_SHA'

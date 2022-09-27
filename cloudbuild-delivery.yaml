@@ -31,7 +31,7 @@ steps:
 # replaced by Cloud Build.
 - name: 'gcr.io/cloud-builders/git'
   id: Copy to production branch
-  entrypoint: /bin/sh
+  entrypoint: mvn
   args:
   - '-c'
   - |
